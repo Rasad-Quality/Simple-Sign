@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</head>
+  <body>
+    <div class="maincontainer">
+      <h1 class="logo" id="logo"><b>E</b>asy<b>F</b>ix</h1>
+      <div class="navbar">
+        <nav>
+          <a class="active" href="#"> <ion-icon name="home"></ion-icon> Home</a>
+          <a class="active" href="#"> <ion-icon name="aperture"></ion-icon>  About</a>
+          <a class="active" href="#"> <ion-icon name="newspaper"></ion-icon> News</a>
+          <a class="active" href="#"> <ion-icon name="call"></ion-icon> Contact</a>
+        </nav>
+      </div>
+      <div class="loginbtn">
+        <button class="login" id="loginButton">
+          <a href="#" class="ionlink"><ion-icon class="loginicon" name="enter"></ion-icon> Login</a>
+        </button>
+      </div>
+    </div>
+    <div class="logincontainer">
+      <div class="formcontainer">
+        <h1 class="h1">Welcome</h1>
+        <div class="formval">
+          <form class="form">
+            <input class="inp1" type="email" name="mail" id="mail">
+            <label class="lab1" for="mail">Email</label>
+            <input class="inp2" type="password" name="password" id="password">
+            <label class="lab2" for="password">Password</label>
+            <div class="checkcontainer"></div>
+            <input class="inp3" type="checkbox" name="checkbox" id="checkbox">
+            <label class="lab3" for="checkbox">Remember Me</label>
+            <input class="inp4" type="submit" name="submit" id="submit">
+          </div>
+          </form>
+          <a class="forgot" href="#">Forgot Your Password?</a>
+      </div>
+      </div>
+      
+  <div class="container100">HI</div>   
+    </div>
+    <script>
+      const loginButton = document.getElementById('loginButton');
+      const loginContainer = document.querySelector('.logincontainer');
+      const submitButton = document.getElementById('submit'); // Get the submit button
+      loginButton.addEventListener('click', (event) => {
+        // Prevent the default anchor tag behavior if needed
+        event.preventDefault();
+        // Add the 'active-popup' class to show the container
+        loginContainer.classList.add('active-popup');
+      });
+
+    </script>
+  
+  </body>
+</html>
